@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table, td{
+            border: 1px solid black;
+        }
+
+   
+    </style>
+
 </head>
 <body>
     <table>
@@ -14,7 +22,6 @@
                 <td> <strong>Descripción</strong></td>
                 <td> <strong>Uso</strong></td>
             </tr>
-            <thead>
                 <tbody>
                     <tr>
                         <td>div</td>
@@ -58,9 +65,184 @@
                         <td>The "article" HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).</td>
                         <td>The "article" element is a good choice to contain entire blog posts, news articles, and similar content.</td>
                     </tr>
+                    <tr>
+                        <td>nav</td>
+                        <td> The "nav" HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                        <td>Is intended only for major blocks of navigation links. Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content. </td>
+                    </tr>
+                    <tr>
+                        <td>aside</td>
+                        <td>The "aside" HTML element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes. </td>
+                        <td> You would use it for secondary content. So on a blog page, you would put related articles in "aside".</tr>
+                    </tr>
+                    <tr>
+                        <td>footer </td>
+                        <td>The "footer" HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. Typically contains information about the author of the section, copyright data or links to related documents. </td>
+                        <td>You would use it for authorship information, copyright information, contact information, sitemap, back to top links and related documents </td>
+                    </tr>
+                    <tr>
+                        <td>main</td>
+                        <td>The "main" HTML element represents the dominant content of the "body" of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</td>
+                        <td>content that is unique to that document and is obviously the "main" content for that page. </td>
+                    </tr>
+                    <tr>
+                        <td>br </td>
+                        <td>The "br" HTML element produces a line break in text (carriage-return). </td>
+                        <td> It is useful for writing a poem or an address, where the division of lines is significant. </td>
+                    </tr>
+                    <tr>
+                        <td>hr </td>
+                        <td>The "hr" HTML element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section. </td>
+                        <td>It is used for adding a horizontal line in between the contents of a page.</td>
+                    </tr>
+                    <tr>
+                        <td>wbr</td>
+                        <td>The "wbr" HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location. </td>
+                        <td>When a word is too long, the browser might break it at the wrong place. You can use the "wbr" element to add word break opportunities. </td>
+                    </tr>
+                    <tr>
+                        <td>sup</td>
+                        <td>The "sup" HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text. </td>
+                        <td>This element should only be used for typographical reasons—that is, to change the position of the text to comply with typographical conventions or standards, rather than solely for presentation or appearance purposes.</td>
+                    </tr>
+                    <tr>
+                        <td>sub</td>
+                        <td>The "sub" HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text. </td>
+                        <td>This element should be used only for typographical reasons—that is, to change the position of the text to comply with typographical conventions or standards, rather than solely for presentation or appearance purposes.</td>
+                    </tr>
+                    <tr>
+                        <td>strong</td>
+                        <td>The "strong" HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type. </td>
+                        <td>This element is for content that is of "strong importance," including things of great seriousness or urgency (such as warnings). This could be a sentence that is of great importance to the whole page, or you could merely try to point out that some words are of greater importance compared to nearby content.</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>The "em" HTML element marks text that has stress emphasis. The <em> element can be nested, with each level of nesting indicating a greater degree of emphasis. </td>
+                        <td>This element is for words that have a stressed emphasis compared to surrounding text, which is often limited to a word or words of a sentence and affects the meaning of the sentence itself.</td>
+                    </tr>
+                    <tr>
+                        <td>mark</td>
+                        <td>The "mark" HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</td>
+
+                        <td>When used in a quotation (q) or block quote (blockquote), it generally indicates text which is of special interest but is not marked in the original source material, or material which needs special scrutiny even though the original author didn't think it was of particular importance. Think of this like using a highlighter pen in a book to mark passages that you find of interest. <br>
+                        Otherwise, it indicates a portion of the document's content which is likely to be relevant to the user's current activity. This might be used, for example, to indicate the words that matched a search operation.
+                        Don't use it for syntax highlighting purposes; instead, use the "span" element with appropriate CSS applied to it.</td>
+                    </tr>
+                    <tr>
+                        <td>q</td>
+                        <td>The "q" HTML element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the (blockquote) element. </td>
+                        <td>The value of this attribute is a URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.</td>
+                    </tr>
+                    <tr>
+                        <td>cite</td>
+                        <td>The "cite" HTML element is used to mark up the title of a cited creative work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata. </td>
+                        <td>In the context of the "cite" element, a creative work that might be cited could be, for example, one of the following:
+                            <br>
+                            A book
+                            A research paper
+                            An essay
+                            A poem
+                            A musical score
+                            A song
+                            A play or film script
+                            A film
+                            A television show
+                            A game
+                            A sculpture
+                            A painting
+                            A theatrical production
+                            A play
+                            An opera
+                            A musical
+                            An exhibition
+                            A legal case report
+                            A computer program
+                            A web site
+                            A web page
+                            A blog post or comment
+                            A forum post or comment
+                            A tweet
+                            A Facebook post
+                            A written or oral statement
+                            And so forth.
+                            To include a reference to the source of quoted material which is contained within a (blockquote) or (q) element, use the cite attribute on the element. </td>
+                    </tr>
+                    <tr>
+                        <td>dfn</td>
+                        <td>The "dfn" HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. The ancestor "p" element, the dt>/dd> pairing, or the nearest section> ancestor of the dfn> element, is considered to be the definition of the term. </td>
+                        <td>If the dfn> element has a title attribute, the value of the title attribute is considered to be the term being defined. The element must still have text within it, but that text may be an abbreviation (perhaps using abbr>) or another form of the term.
+                            If the dfn> contains a single child element and does not have any text content of its own, and the child element is an abbr> element with a title attribute itself, then the exact value of the abbr> element's title is the term being defined.
+                            Otherwise, the text content of the dfn> element is the term being defined. This is shown in the first example below.</td>
+                    </tr>
+                    <tr>
+                        <td>abbr</td>
+                        <td>The abbr> HTML element represents an abbreviation or acronym.
+                            When including an abbreviation or acronym, provide a full expansion of the term in plain text on first use, along with the abbr> to mark up the abbreviation. This informs the user what the abbreviation or acronym means.
+                            
+                            The optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. This provides a hint to user agents on how to announce/display the content while informing all users what the abbreviation means. If present, title must contain this full description and nothing else.</td>
+                        <td>When an abbreviation is used and you want to provide an expansion or definition outside the flow of the document's content, use abbr> with an appropriate title.
+                            To define an abbreviation which may be unfamiliar to the reader, present the term using abbr> and inline text providing the definition. Include a title attribute only when the inline expansion or definition is not available.
+                            When an abbreviation's presence in the text needs to be semantically noted, the abbr> element is useful. This can be used, in turn, for styling or scripting purposes.
+                            You can use abbr> in concert with dfn> to establish definitions for terms which are abbreviations or acronyms. See the example Defining an abbreviation below. </td>
+                    </tr>
+                    <tr>
+                        <td>small</td>
+                        <td>The small> HTML element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small.</td>
+                        <td>It is used to emphasize small text or information that is of secondary significance, such as copyright, side remarks, and legal disclaimers.</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>datetime</td>
+                        <td>The HTMLTimeElement.dateTime property is a string that reflects the datetime HTML attribute, containing a machine-readable form of the element's date and time value.</td>
+                        <td>It is used to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders. </td>
+                    </tr>
+                    <tr>
+                        <td>ins</td>
+                        <td>The ins> HTML element represents a range of text that has been added to a document. You can use the del> element to similarly represent a range of text that has been deleted from the document.</td>
+                        <td>It defines a text that has been inserted into a document.</td>
+                    </tr>
+                    <tr>
+                        <td>del</td>
+                        <td>The del> HTML element represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The ins> element can be used for the opposite purpose: to indicate text that has been added to the document.</td>
+                        <td>This can be used when rendering "track changes" or source code diff information, for example. The ins> element can be used for the opposite purpose: to indicate text that has been added to the document.</td>
+                    </tr>
+                    <tr>
+                        <td>s</td>
+                        <td>The s> HTML element renders text with a strikethrough, or a line through it. Use the s> element to represent things that are no longer relevant or no longer accurate. However, s> is not appropriate when indicating document edits; for that, use the del> and ins> elements, as appropriate.</td>
+                        <td>Use this element to represent things that are no longer relevant or no longer accurate.</td>
+                    </tr>
+                    <tr>
+                        <td>code</td>
+                        <td>The code> HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</td>
+                        <td>The content inside is displayed in the browser's default monospace font. Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).</td>
+                    </tr>
+                    <tr>
+                        <td>samp</td>
+                        <td>The samp> HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).</td>
+                        <td>You can use a CSS rule to override the browser's default font face for the samp> element; however, it's possible that the browser's preferences may take precedence over any CSS you specify.</td>
+                    </tr>
+                    <tr>
+                        <td>kbd</td>
+                        <td>The "kbd" HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a kbd> element using its default monospace font, although this is not mandated by the HTML standard.</td>
+                        <td>Nesting a kbd> element within another kbd> element represents an actual key or other unit of input as a portion of a larger input. See Representing keystrokes within an input below.
+                            Nesting a kbd> element inside a samp> element represents input that has been echoed back to the user by the system. See Echoed input, below, for an example.
+                            Nesting a samp> element inside a kbd> element, on the other hand, represents input which is based on text presented by the system, such as the names of menus and menu items, or the names of buttons displayed on the screen. See the example under Representing onscreen input options below.</td>
+                    </tr>
+                    <tr>
+                        <td>pre</td>
+                        <td>The pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.</td>
+                        <td>The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.</td>
+                    </tr>
+                    <tr>
+                        <td>address</td>
+                        <td>The address> HTML element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.</td>
+                        <td>The address> element can only be used to represent the contact information for its nearest article> or body> element ancestor.
+                            This element should not contain more information than the contact information, like a publication date (which belongs in a time> element).
+                            Typically an address> element can be placed inside the footer> element of the current section, if any.</td>
+                    </tr>
                 </tbody>
-            </thead>
     </table>
-    
+    <h2>Historia </h2>
+    <a href="aplicacion/historia.html">Enlace a la historia</a>
 </body>
 </html>
